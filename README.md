@@ -5,38 +5,31 @@ class lynxreall:
     def channels() -> str:
         """
         Returns the Discord channel for professional communication.
-
         :return: Discord channel link
         """
         discord = "discord.gg/perdition-development-978347894706950215"
         return discord
-
     @staticmethod
     def contact() -> str:
         """
         Returns the preferred contact handle for professional inquiries.
-
         :return: Discord handle
         """
         discord = "lynxreal"
         return discord
-
     @staticmethod
     def life() -> tuple:
         """
         Returns information about language proficiency and age.
-
         :return: Tuple containing languages and age
         """
         langs = ['Turkish']
         age = 18
         return langs, age
-
     @staticmethod
     def coding() -> tuple:
         """
         Returns information about coding expertise, specialties, and development environment.
-
         :return: Tuple containing languages, specialties, and development environment
         """
         langs = {
