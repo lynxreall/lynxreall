@@ -1,16 +1,68 @@
-### Hi there 👋
 
-<!--
-**lynxreall/lynxreall** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
+</div>
 
-Here are some ideas to get you started:
+<p href="https://discord.com/users/978347894706950215" align="center" width="1000px">
+    <img src="https://lanyard.cnrad.dev/api/978347894706950215?borderRadius=30px"/>
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```python
+class Attributes(lynxreal):
+    @staticmethod
+    def channels() -> str:
+        """
+        Returns the Discord channel for professional communication.
+
+        :return: Discord channel link
+        """
+        discord = "discord.gg/perdition-development-978347894706950215"
+        return discord
+
+    @staticmethod
+    def contact() -> str:
+        """
+        Returns the preferred contact handle for professional inquiries.
+
+        :return: Discord handle
+        """
+        discord = "lynxreal"
+        return discord
+
+    @staticmethod
+    def life() -> tuple:
+        """
+        Returns information about language proficiency and age.
+
+        :return: Tuple containing languages and age
+        """
+        langs = ['Turkish',]
+        age = 18
+        return langs, age
+
+    @staticmethod
+    def coding() -> tuple:
+        """
+        Returns information about coding expertise, specialties, and development environment.
+
+        :return: Tuple containing languages, specialties, and development environment
+        """
+        langs = {
+            'expert': ['js'],
+            'beginning': ['html', 'c#'],
+            'learning': ['golang']
+        }
+        specialities = ['web/app reverse engineering', 'fullstack']
+        environnement = ['vscode']
+        return langs, specialities, environnement
+```
+<h2 align="center">Skills </h2>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,cs,vscode,js,css,html" />
+  </a>
+</p>
+
+<p href="https://discord.com/users/978347894706950215" align="center">
+    <img alt="" src="https://github-readme-stats.vercel.app/api?username=lynxreall&theme=tokyonight&show_icons=true">
+</p>
