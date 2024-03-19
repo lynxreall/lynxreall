@@ -1,13 +1,7 @@
+import requests
+import json
 
-<div align="center">
-</div>
-
-<p href="https://discord.com/users/978347894706950215" align="center" width="1000px">
-    <img src="https://lanyard.cnrad.dev/api/978347894706950215?borderRadius=30px"/>
-</p>
-
-```python
-class Attributes(lynxreal):
+class LynxReal:
     @staticmethod
     def channels() -> str:
         """
@@ -35,7 +29,7 @@ class Attributes(lynxreal):
 
         :return: Tuple containing languages and age
         """
-        langs = ['Turkish',]
+        langs = ['Turkish']
         age = 18
         return langs, age
 
@@ -52,19 +46,21 @@ class Attributes(lynxreal):
             'learning': ['golang']
         }
         specialities = ['web/app reverse engineering', 'fullstack']
-        environnement = ['vscode']
-        return langs, specialities, environnement
-```
-<h2 align="center">Skills </h2>
+        environment = ['vscode']
+        return langs, specialities, environment
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,cs,vscode,js,css,html" />
-  </a>
-</p>
+# Lanyard API'den veri çekme
+response = requests.get('https://api.lanyard.rest/v1/users/978347894706950215')
+data = response.json()
 
-<p href="https://discord.com/users/978347894706950215" align="center">
-    <img alt="" src="https://github-readme-stats.vercel.app/api?username=lynxreall&theme=tokyonight&show_icons=true">
-</p>
+# Alınan verileri GitHub Actions için düzenleme
+github_data = {
+    "schemaVersion": 1,
+    "label": "Discord Status",
+    "message": f"{data['data']['discord_user']['username']} is {data['data']['listening_to_spotify']['song']}",
+    "color": "blue"
+}
 
-
+# GitHub Actions için json dosyası oluşturma
+with open('data.json', 'w') as json_file:
+    json.dump(github_data, json_file)
