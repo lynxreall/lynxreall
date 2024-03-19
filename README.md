@@ -1,11 +1,5 @@
-<div align="center">
-</div>
+import requests
 
-<p href="https://discord.com/users/978347894706950215" align="center" width="1000px">
-    <img src="https://lanyard.cnrad.dev/api/978347894706950215?borderRadius=30px"/>
-</p>
-
-```python
 class Attributes(lynxreal):
     @staticmethod
     def channels() -> str:
@@ -16,6 +10,7 @@ class Attributes(lynxreal):
         """
         discord = "discord.gg/perdition-development-978347894706950215"
         return discord
+    
     @staticmethod
     def contact() -> str:
         """
@@ -52,15 +47,40 @@ class Attributes(lynxreal):
         specialities = ['web/app reverse engineering', 'fullstack']
         environnement = ['vscode']
         return langs, specialities, environnement
-```
-<h2 align="center">Skills </h2>
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,cs,vscode,js,css,html" />
-  </a>
-</p>
+def get_spotify_data(user_id):
+    url = f"https://api.lanyard.rest/v1/users/{user_id}"
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        data = response.json()
+        spotify = data.get('listening_to_spotify', None)
+        
+        if spotify:
+            track_info = spotify.get('track', None)
+            if track_info:
+                track_name = track_info.get('song', 'Unknown')
+                artist_name = track_info.get('artist', 'Unknown')
+                album_cover = track_info.get('album_art_url', None)
+                
+                return {
+                    'track_name': track_name,
+                    'artist_name': artist_name,
+                    'album_cover': album_cover
+                }
+            else:
+                return "Spotify kullanıcının şu anda dinlediği bir şarkı yok."
+        else:
+            return "Kullanıcı şu anda Spotify'da aktif değil."
+    else:
+        return "API'den veri alınamadı."
 
-<p href="https://discord.com/users/978347894706950215" align="center">
-    <img alt="" src="https://github-readme-stats.vercel.app/api?username=lynxreall&theme=tokyonight&show_icons=true">
-</p>
+# Kullanıcı kimliği
+user_id = "978347894706950215"
+
+# Spotify verilerini al
+spotify_data = get_spotify_data(user_id)
+
+# Sonuçları yazdır
+print("Spotify Verileri:")
+print(spotify_data)
