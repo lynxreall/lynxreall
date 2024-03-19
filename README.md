@@ -16,11 +16,6 @@ class Attributes(lynxreal):
         """
         discord = "discord.gg/perdition-development-978347894706950215"
         return discord
-import requests as r
-
-data = r.get("https://api.lanyard.rest/v1/users/978347894706950215").json()
-print(data)
-
     @staticmethod
     def contact() -> str:
         """
