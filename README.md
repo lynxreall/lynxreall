@@ -3,7 +3,7 @@
 </div>
 
 <p href="https://discord.com/users/978347894706950215" align="center" width="1000px">
-    <img src="https://api.lanyard.rest/v1/users/978347894706950215?borderRadius=30px"/>
+    <img src="https://lanyard.cnrad.dev/api/978347894706950215?borderRadius=30px"/>
 </p>
 
 ```python
@@ -66,3 +66,5 @@ class Attributes(lynxreal):
 <p href="https://discord.com/users/978347894706950215" align="center">
     <img alt="" src="https://github-readme-stats.vercel.app/api?username=lynxreall&theme=tokyonight&show_icons=true">
 </p>
+
+
