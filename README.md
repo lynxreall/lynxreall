@@ -1,7 +1,6 @@
 import requests
 import json
-
-class LynxReal:
+class lynxreall:
     @staticmethod
     def channels() -> str:
         """
