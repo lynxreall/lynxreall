@@ -57,7 +57,7 @@ class Attributes(lynxreal):
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,cs,vscode,js,css,html,mongodb,sql" />
+    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,cs,vscode,js,css,html,mongodb,mysql" />
   </a>
 </p>
 
