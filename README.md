@@ -35,7 +35,7 @@ class LynxReal:
 ### 🛠️ Tech Stack
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,js,ts,react,nextjs,html,css,cs,go,mysql,mongodb,vscode,docker" />
+<img src="https://skillicons.dev/icons?i=vscode,html,css,js,mongodb,mysql,cs,nodejs" />
   </a>
 </p>
 
