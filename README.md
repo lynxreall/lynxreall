@@ -1,66 +1,68 @@
-<div align="center">
-</div>
-
-<p href="https://discord.com/users/978347894706950215" align="center" width="1000px">
-    <img src="https://lanyard.cnrad.dev/api/978347894706950215?borderRadius=30px"/>
-</p>
-
-```python
-class Attributes(lynxreal):
-    @staticmethod
-    def channels() -> str:
-        """
-        Returns the Discord channel for professional communication.
-
-        :return: Discord channel link
-        """
-        discord = "discord.gg/perdition-development-978347894706950215"
-        return discord
-    @staticmethod
-    def contact() -> str:
-        """
-        Returns the preferred contact handle for professional inquiries.
-
-        :return: Discord handle
-        """
-        discord = "lynxreal"
-        return discord
-
-    @staticmethod
-    def life() -> tuple:
-        """
-        Returns information about language proficiency and age.
-
-        :return: Tuple containing languages and age
-        """
-        langs = ['Turkish',]
-        age = 18
-        return langs, age
-
-    @staticmethod
-    def coding() -> tuple:
-        """
-        Returns information about coding expertise, specialties, and development environment.
-
-        :return: Tuple containing languages, specialties, and development environment
-        """
-        langs = {
-            'expert': ['js'],
-            'beginning': ['html', 'c#'],
-            'learning': ['golang']
-        }
-        specialities = ['web/app reverse engineering', 'fullstack']
-        environnement = ['vscode']
-        return langs, specialities, environnement
-```
-<h2 align="center">Skills </h2>
+# 💻 LynxReal | Web Developer & Reverse Engineer
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,cs,vscode,js,css,html,mongodb,mysql" />
+  <a href="https://discord.com/users/978347894706950215">
+    <img src="https://lanyard.cnrad.dev/api/978347894706950215?borderRadius=30px"/>
   </a>
 </p>
 
-<p href="https://discord.com/users/978347894706950215" align="center">
-    <img alt="" src="https://github-readme-stats.vercel.app/api?username=lynxreall&theme=tokyonight&show_icons=true">
+---
+
+### 🚀 About Me
+```python
+class LynxReal:
+    @staticmethod
+    def contact() -> str:
+        return "Discord: lynxreal"
+    
+    @staticmethod
+    def life() -> tuple:
+        langs = ['Turkish']
+        age = 18
+        return langs, age
+    
+    @staticmethod
+    def coding() -> dict:
+        return {
+            'expert': ['JavaScript', 'Node.js'],
+            'beginning': ['HTML', 'C#'],
+            'learning': ['Golang']
+        }
+```
+
+---
+
+### 🛠️ Tech Stack
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,discordjs,js,ts,react,nextjs,html,css,cs,go,mysql,mongodb,vscode,docker" />
+  </a>
+</p>
+
+---
+
+### 📊 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=lynxreall&theme=tokyonight&show_icons=true&count_private=true" alt="GitHub Stats" />
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lynxreall&theme=tokyonight" alt="GitHub Streak" />
+</p>
+
+---
+
+### 🔥 Most Used Languages
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lynxreall&layout=compact&theme=tokyonight" />
+</p>
+
+---
+
+### 🌐 Socials
+<p align="center">
+  <a href="https://discord.com/users/978347894706950215">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
+  <a href="https://github.com/lynxreall">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
 </p>
